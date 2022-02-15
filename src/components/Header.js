@@ -1,7 +1,16 @@
+import React,{useEffect, useState} from 'react'
 import classes from './Header.module.css';
 const Header = () =>{
+    const [headerStyle,setHeaderStyle] = useState('');
+    const scrollHandle = ()=>{
+        window.scrollY>=50 ? setHeaderStyle('scroll-header'):setHeaderStyle('');
+    }
+    useEffect(()=>{
+        console.log('Helo')
+        window.addEventListener('scroll',scrollHandle)
+    },[]);
     return (
-        <header className={classes.header} id="header">
+        <header className={`${classes.header} ${headerStyle}` } id="header">
             <nav className={`${classes.nav} container`}>
                 <a href="http://localhost:3000" className={classes.logo}> Alexander </a>
                 <div className={classes.menu}>

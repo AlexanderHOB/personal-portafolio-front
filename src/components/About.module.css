@@ -1,6 +1,9 @@
 .about__container{
     row-gap:2.5rem;
 }
+.about__data{
+    text-align:center;
+}
 .about__img{
     width:220px;
     border-radius: 1.5rem;

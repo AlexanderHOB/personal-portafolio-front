@@ -1,7 +1,9 @@
 import Home from "./Home";
 import About from "./About";
-import Skills from "./Skills";
-import Work from "./Work";
+import Skills from "./Main/Skills";
+import Work from "./Main/Work";
+import Qualification from "./Main/Qualification";
+
 
 
 const Main = ()=>{
@@ -12,6 +14,7 @@ const Main = ()=>{
             <About/>
             <Skills/>
             <Work/>
+            <Qualification/>
         </main>
     );
 }

@@ -74,7 +74,7 @@ const Contact = ()=>{
                                 placeholder="Insert your email"  
                                 />
                         </div>
-                        <div className={classes['contact__form-div']}>
+                        <div className={classes['contact__form-div'] +' '+ classes['contact__form-area']}>
                             <label htmlFor="" className={classes['contact__form-tag']}>
                                 Project
                             </label>

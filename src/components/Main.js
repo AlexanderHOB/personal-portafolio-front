@@ -3,6 +3,8 @@ import About from "./About";
 import Skills from "./Main/Skills";
 import Work from "./Main/Work";
 import Qualification from "./Main/Qualification";
+import Contact from "./Main/Contact";
+
 
 
 
@@ -15,6 +17,7 @@ const Main = ()=>{
             <Skills/>
             <Work/>
             <Qualification/>
+            <Contact/>
         </main>
     );
 }

@@ -2,16 +2,22 @@ import {useEffect} from 'react';
 import classes from './Qualification.module.css';
 const Qualification = ()=>{
     let tabs,tabContents;
+
+    //get all elements of DOM after render HTML code
     useEffect(()=>{
         tabs = document.querySelectorAll('[data-target')
         tabContents = document.querySelectorAll('[data-content]');
-        console.log('sss')
     },[tabs,tabContents]);
 
-    const activeLinkHandler = (e)=>{
-        // console.log(tabs[0].dataset.target)
-        // tabContents.forEach(link=>link.classList.remove(`${classes.qualification__active}`));
-        // e.target.className +=(` ${classes.qualification__active}`);
+    const activeLinkHandler = ({target})=>{
+        //get element by ID throught event click
+        const content = document.querySelector(target.dataset.target);
+        //delete class active in content and tab
+        tabContents.forEach(link=>link.classList.remove(classes.qualification__active));
+        tabs.forEach(link => link.classList.remove(classes.qualification__active))
+        //add class active in tab and content clicked
+        content.className +=(` ${classes.qualification__active}`);
+        target.className +=(` ${classes.qualification__active}`);
     }
 
     return(
@@ -20,11 +26,11 @@ const Qualification = ()=>{
             <h2 className='section__title'>My personal Journey</h2>
             <div className={`${classes.qualification__container} container`}>
                 <div className={classes.qualification__tabs}>
-                    <div className={`${classes.qualification__button} button--flex`} onClick={activeLinkHandler} data-target="#education">
+                    <div className={`${classes.qualification__button} ${classes.qualification__active} button--flex`} onClick={activeLinkHandler} data-target="#education">
                         <i className={`${classes.qualification__icon} bx bxs-graduation`}></i>
                         Education
                     </div>
-                    <div className={`${classes.qualification__button} button--flex`} onClick={activeLinkHandler} data-target="#work">
+                    <div className={`${classes.qualification__button} button--flex`} onClick={activeLinkHandler} data-target="#experience">
                         <i className={`${classes.qualification__icon} bx bxs-briefcase`} ></i>
                         Work
                     </div>
@@ -108,7 +114,7 @@ const Qualification = ()=>{
                         </div>
                     </div>
                     {/* Qualification content 2 */}
-                    <div className={classes.qualification__content} data-content id='work'>
+                    <div className={classes.qualification__content} data-content id='experience'>
                         <div className={classes.qualification__data}>
                             <div>
                                 <h3 className={classes.qualification__title}>

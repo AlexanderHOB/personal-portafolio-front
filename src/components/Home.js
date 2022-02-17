@@ -21,13 +21,13 @@ const Home = ()=>{
                     <img src="assets/images/mev2.png" alt="me" className={classes.home__img}/>
                 </div>
                 <div className={classes.home__social}>
-                    <a href="https://www.linkedin.com/in/alexander-henry-obispo-buendia/" className={classes['home__social-link']}>
+                    <a href="https://www.linkedin.com/in/alexander-henry-obispo-buendia/" className={classes['home__social-link']} target="_blank">
                         <i className='bx bxl-linkedin-square'></i>
                     </a>
-                    <a href="https://github.com/AlexanderHOB" className={classes['home__social-link']}>
+                    <a href="https://github.com/AlexanderHOB" className={classes['home__social-link']} target="_blank">
                         <i className='bx bxl-github' ></i>
                     </a>
-                    <a href="https://twitter.com/Alexander_HOB" className={classes['home__social-link']}>
+                    <a href="https://twitter.com/Alexander_HOB" className={classes['home__social-link']} target="_blank">
                         <i className='bx bxl-twitter' ></i>
                     </a>
                 </div>

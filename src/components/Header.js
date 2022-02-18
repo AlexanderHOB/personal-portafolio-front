@@ -1,4 +1,6 @@
-import React,{useEffect, useState} from 'react'
+import React,{useEffect, useState} from 'react';
+import A from './UI/A';
+import dataNav from '../data/navbar';
 import classes from './Header.module.css';
 const Header = () =>{
     const [headerStyle,setHeaderStyle] = useState('');
@@ -6,7 +8,6 @@ const Header = () =>{
         window.scrollY>=50 ? setHeaderStyle('scroll-header'):setHeaderStyle('');
     }
     useEffect(()=>{
-        console.log('Helo')
         window.addEventListener('scroll',scrollHandle)
     },[]);
     return (
@@ -15,21 +16,8 @@ const Header = () =>{
                 <a href="http://localhost:3000" className={classes.logo}> Alexander </a>
                 <div className={classes.menu}>
                     <ul>
-                        <li>
-                            <a href="http://localhost:3000" className={classes['active-link']}><i className='bx bxs-home'></i></a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3000" ><i className='bx bxs-user' ></i></a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3000" ><i className='bx bxs-book' ></i></a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3000" ><i className='bx bxs-briefcase' ></i></a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3000" ><i className='bx bxs-comment-dots' ></i></a>
-                        </li>
+                        {dataNav.map( link=> <A key={link.id}to={link.to} icon={link.icon}/>)}
+                        
                     </ul>
                 </div>
                 {/* Theme change button  */}

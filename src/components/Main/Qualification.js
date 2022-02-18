@@ -21,7 +21,7 @@ const Qualification = ()=>{
     }
 
     return(
-        <section className={`${classes.qualification} section`}>
+        <section className={`${classes.qualification} section`} id="journey">
             <span className='section__subtitle'>Qualification</span>
             <h2 className='section__title'>My personal Journey</h2>
             <div className={`${classes.qualification__container} container`}>

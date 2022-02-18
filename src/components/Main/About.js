@@ -1,7 +1,8 @@
 import classes from './About.module.css';
+
 const About = ()=>{
     return(
-        <section className="section about">
+            <section className="section about" id="about">
             <span className="section__subtitle">My Intro</span>
             <h2 className="section__title"> About Me</h2>
 
@@ -34,6 +35,7 @@ const About = ()=>{
                 </div>
             </div>
         </section>
+        
     );
 }
 export default About;

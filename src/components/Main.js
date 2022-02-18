@@ -1,5 +1,5 @@
-import Home from "./Home";
-import About from "./About";
+import Home from "./Main/Home";
+import About from "./Main/About";
 import Skills from "./Main/Skills";
 import Work from "./Main/Work";
 import Qualification from "./Main/Qualification";

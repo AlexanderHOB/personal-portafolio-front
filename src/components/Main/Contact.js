@@ -1,7 +1,7 @@
 import classes from './Contact.module.css';
 const Contact = ()=>{
     return(
-        <section className="contact section">
+        <section className="contact section" id="contact">
             <span className="section__subtitle">Get in touch</span>
             <h2 className="section__title"> Contact Me</h2>
 

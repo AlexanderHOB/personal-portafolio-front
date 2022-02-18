@@ -1,7 +1,7 @@
 import classes from './Skills.module.css';
 const Skills = ()=>{
     return(
-        <section className="skills section">
+        <section className="skills section" id="abilities">
             <span className="section__subtitle">My abilities</span>
             <h2 className="section__title">My Experience</h2>
             <div className={`${classes.skills__container} container grid`}>

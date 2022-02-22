@@ -20,11 +20,11 @@ const About = ()=>{
                             <h3 className={classes.about__title}>Completed</h3>
                             <span className={classes.about__subtitle}>4 + projects</span>
                         </div>
-                        <div className={classes.about__box}>
+                        {/* <div className={classes.about__box}>
                             <i className={`bx bx-support ${classes.about__icon}`}></i>
                             <h3 className={classes.about__title}>Support</h3>
                             <span className={classes.about__subtitle}>Online 24/7</span>
-                        </div>
+                        </div> */}
                     </div>
                     <p className={classes.about__description}>
                         Fullstack Developer Junior, I create web platforms. I have a year of experience and many clients are happy with the projects carried out. Also, I love learning about new technologies and dominate them.

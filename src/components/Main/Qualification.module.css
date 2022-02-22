@@ -1,5 +1,6 @@
 .qualification{
-
+    row-gap: 3rem;
+    padding-bottom:3rem;
 }
 .qualification__tabs{
     display: flex;
@@ -59,4 +60,19 @@
 .qualification__button.qualification__active{
     color:var(--first-color);
     
+}
+@media screen and (min-width: 576px){
+    .qualification{
+        grid-template-columns: 400px;
+        justify-content: center;
+    }
+
+}
+
+/* For large devices  */
+
+@media screen and (min-width: 767px){
+    .qualification{
+        grid-template-columns:  650px;
+    }
 }

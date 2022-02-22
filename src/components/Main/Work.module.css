@@ -49,3 +49,50 @@
     background-color:var(--first-color);
     color:var(--body-color);
 }
+
+
+/* Breakpoints  */
+/* For small devices  */
+@media screen and (max-width: 320px){
+    .work__item{
+        font-size: var(--small-font-size);
+    }
+    .work__filters{
+        column-gap: .25rem;
+    }
+}
+
+
+/* For medium devices  */
+
+@media screen and (min-width: 576px){
+    .work__container{
+        justify-content: center;
+    }
+    .work__img{
+        width: 295px;
+    }
+}
+
+/* For large devices  */
+
+@media screen and (min-width: 767px){
+    .work__container{
+        grid-template-columns: repeat(2,max-content);
+    }
+}
+
+@media screen and (min-width: 976px){
+    .work__container{
+        gap:3rem;
+    }
+    .work__card{
+        padding:1.25rem;
+    }
+    .work__img{
+        margin-bottom: 1rem;
+    }
+    .work__title{
+        margin-bottom: .5rem;
+    }
+}

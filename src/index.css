@@ -194,3 +194,55 @@ code {
 .scroll-header{
   box-shadow: 0 4px 4px hsla(0,0%,4%,.3);
 }
+
+
+/* variable light theme  */
+
+body.light-theme{
+  --title-color: hsl(var(--second-hue), 5%, 15%);
+  --text-color: hsl(var(--second-hue), 25%, 38%);
+  --body-color: hsl(var(--second-hue), 100%, 99%);
+  --container-color: #fff;
+}
+.light-theme .scroll-header {
+  box-shadow:0 2px 4px hsla(0,0%,1%,.1);
+}
+.light-theme div[class*='menu'] {
+  background-color: hsla(var(--second-hue),32%,90%,.8);
+}
+.light-theme .section__subtitle{
+  color:var(--text-color);
+}
+
+.light-theme a[class*='home__social-link'] {
+  box-shadow:0 2px 8px hsla(var(--second-hue),48%,8%,.1);
+}
+.light-theme div[class*='about__box']{
+  box-shadow:0 2px 8px hsla(var(--second-hue),48%,8%,.1);
+
+}
+
+
+/* Breakpoints  */
+/* For small devices  */
+
+
+
+/* For medium devices  */
+
+
+
+/* For large devices  */
+@media screen and (min-width: 992px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section{
+    padding:6.5rem 0 1rem;
+  }
+  .section__title{
+    margin-bottom: 3.5rem;
+  }
+  
+}

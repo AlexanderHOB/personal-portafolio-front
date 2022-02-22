@@ -88,3 +88,33 @@
     resize: none;
 }
 
+
+/* For medium devices  */
+
+@media screen and (min-width: 576px){
+    .contact__info{
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
+    .contact__form{
+        width: 360px;
+        margin: 0 auto;
+    }
+}
+
+/* For large devices  */
+
+@media screen and (min-width: 767px){
+    .contact__container{
+        grid-template-columns: repeat(2,max-content);
+        justify-content: center;
+        column-gap:3rem;
+    }
+}
+
+
+@media screen and (min-width: 976px){
+    .contact__container{
+        column-gap: 6rem;
+    }
+}

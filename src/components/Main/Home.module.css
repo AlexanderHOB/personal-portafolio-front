@@ -89,3 +89,44 @@
     font-size: var(--small-font-size);
     transform: rotate(-90deg)
 }
+
+/* Breakpoints  */
+/* For small devices  */
+@media screen and (max-width: 320px){
+    .home__buttons{
+        flex-direction: column;
+    }
+    .home__handle{
+        width: 150px;
+        height: 220px;
+    }
+    .home__img{
+        width: 150px;
+    }
+}
+
+
+/* For medium devices  */
+
+
+
+/* For large devices  */
+@media screen and (min-width: 976px){
+    .home__handle{
+        height: 400px;
+        width: 290px;
+    }
+    .home__img{
+        width: 280px;
+    }
+    .home__social-link{
+        padding:.4rem;
+        font-size: 1.25rem;
+    }
+    .home__social::after{
+        transform: rotate(90deg) translate(16px)
+    }
+    .home__scroll-icon{
+        font-size: 2rem;
+    }
+}

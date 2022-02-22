@@ -42,3 +42,35 @@
 .skills__level{
     font-size: var(--tiny-font-size);
 }
+
+
+/* Breakpoints  */
+/* For small devices  */
+@media screen and (max-width: 320px){
+    .skills__box{
+        column-gap: 1rem;
+    }
+    .skills__name{
+        font-size: var(--small-font-size);
+    }
+}
+
+
+/* For medium devices  */
+
+@media screen and (min-width: 576px){
+    .skills__container{
+        justify-content: center;
+    }
+    .skills__content{
+        padding:2rem 4rem;
+    }
+}
+
+/* For large devices  */
+@media screen and (min-width: 976px){
+    .skills__container{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3rem;
+    }
+}

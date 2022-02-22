@@ -76,3 +76,13 @@
         grid-template-columns:  650px;
     }
 }
+@media screen and (min-width: 1200px){
+    .qualification{
+        grid-template-columns:  950px;
+    }
+    .qualification__data{
+        column-gap: 10rem;
+    }
+    .qualification__line{
+    }
+}

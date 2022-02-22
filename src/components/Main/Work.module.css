@@ -83,6 +83,7 @@
 }
 
 @media screen and (min-width: 976px){
+    
     .work__container{
         gap:3rem;
     }
@@ -94,5 +95,13 @@
     }
     .work__title{
         margin-bottom: .5rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+    .work__container{
+        grid-template-columns: repeat(3,max-content);
+
     }
 }
